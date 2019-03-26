@@ -1,4 +1,4 @@
-# Flash_Cards
+# Flash Cards
 get words from an online dictionary
 ...^_^...
 <O_O! 
