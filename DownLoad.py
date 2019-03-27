@@ -16,6 +16,17 @@ class OneWord:
         self.AudioExportPath = ""
         self.HaveE = False
 
+class OneWord2:
+
+    def __init__(self):
+        self.Url = "https://s3.amazonaws.com/audio.oxforddictionaries.com/en/mp3/apple_gb_1.mp3"
+        self.Word = "apple"
+        self.Index = 1
+        self.Audio = None
+        self.AudioTempPath = ""
+        self.AudioExportPath = ""
+        self.HaveE = False
+
 
 class DownLoad:
     def _download_mp3(self,word):
@@ -25,12 +36,12 @@ class DownLoad:
             word.AudioTempPath = path
         except:
             word.HaveE = True
+            print("error {}".format(word.Word))
             
             
 
     def Download(self,words:list):
-        for i in range(len(words)):
-            word = words[i]
+        for word in words:
             if word.HaveE == False:
                 self._download_mp3(word)
                 
@@ -38,8 +49,9 @@ class DownLoad:
 
 
 if __name__ == "__main__":
-    wos = [OneWord()]
+    wos = [OneWord(),OneWord2()]
     d = DownLoad()
     d.Download(wos)
     m = MakeAudio.MakeAudio()
     m.MakeAudios(wos)
+    m.ConnectAudio()
