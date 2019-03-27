@@ -11,4 +11,4 @@ sudo apt-get install ffmpeg
 ```
 
 
-sudo sed -i -e 's%http://.*.ubuntu.com%http://ftp.jaist.ac.jp/pub/Linux%g' /etc/apt/sources.list
+sudo sed -i -e 's%http://.*.ubuntu.com%http://ftp.jaist.ac.jp/pub/Linux%g'/etc/apt/sources.list
