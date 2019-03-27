@@ -4,15 +4,6 @@ import os
 
 class MakeAudio:
 
-    # def _wordAudio(self,oneWord):
-    #     try:
-            
-    #     except:
-    #         oneWord.HaveE = True
-    #         print(oneWord.Word)
-
-
-
     def _addSilent(self,oneWord):
 
         try:
@@ -29,29 +20,32 @@ class MakeAudio:
     def MakeAudios(self,words):
         for word in words:
             if word.HaveE == False:
-                # self._wordAudio(word)
                 self._addSilent(word)
                 print(">><((^ >")
 
 
     def ConnectAudio(self):
         index :int = 0
-
         files :str = os.listdir("words/")
         files.sort()
+        i = 0
 
         while True:
-
-            sound = AudioSegment.from_file("words/{}".format(files[index]), "mp3")
+            sound1 = AudioSegment.from_file("words/{}".format(files[index]), "mp3")
             index += 1
-
-            for j in range(34):
-                sound1 = AudioSegment.from_file("words/{}".format(files[index]), "mp3")
-
-                sound+sound1
-
+            if index>=len(files)-1:
+                sound1.export("conbined/test{}.mp3".format(i), format="mp3")
+                return
+            for j in range(3):
+                sound2 = AudioSegment.from_file("words/{}".format(files[index]), "mp3")
+                sound1+=sound2
+                
                 index+=1
-                if index>=len(files):break
+                if index>=len(files):
+                    sound1.export("conbined/test{}.mp3".format(i), format="mp3")
+                    return
+            sound1.export("conbined/test{}.mp3".format(i), format="mp3")
+            i+=1
 
                 
 
