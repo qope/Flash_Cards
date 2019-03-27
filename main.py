@@ -40,7 +40,7 @@ class Main:
     def __init__(self):
         
 
-        self._read = ReadExcel.ReadExcel(1)
+        self._read = ReadExcel.ReadExcel(3)
         self._urlf = UrlFetcher.UrlFetcher()
         self._dl = DownLoad.DownLoad()
         self._audio = MakeAudio.MakeAudio()
@@ -54,6 +54,7 @@ class Main:
 
         self._dl.Download(self._words)
         self._audio.MakeAudios(self._words)
+        self._audio.ConnectAudio()
 
 
 

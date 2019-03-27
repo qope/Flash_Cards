@@ -18,9 +18,29 @@ class MakeAudio:
     def MakeAudios(self,words):
         for word in words:
             if word.HaveE == False:
-                # self._wordAudio(word)
                 self._addSilent(word)
                 print(">><((^ >")
+    def ConnectAudio(self):
+        index :int = 0
+        files :str = os.listdir("words/")
+        files.sort()
+        i = 0
+
+        while True:
+            sound1 = None
+
+            for j in range(3):
+                sound2 = AudioSegment.from_file("words/{}".format(files[index]), "mp3")
+                if sound1 == None : sound1 = sound2
+                else :sound1 += sound2
+
+                index+=1
+                if index>=len(files):
+                    sound1.export("conbined/test{}.mp3".format(i), format="mp3")
+                    return
+            sound1.export("conbined/test{}.mp3".format(i), format="mp3")
+            i+=1
+
     def ConnectAudio2(self):
         files = os.listdir("words/")
         files.sort()
@@ -41,7 +61,7 @@ class MakeAudio:
                 break
 if __name__ == '__main__':
     m = MakeAudio()
-    m.ConnectAudio2()
+    m.ConnectAudio()
 
                 
 
