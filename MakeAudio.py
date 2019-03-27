@@ -11,19 +11,24 @@ class MakeAudio:
             sound2 = AudioSegment.from_file("Silent3sec.mp3", "mp3")
             sound = sound1+sound2
             sound.export("words/{}_{}.mp3".format(str( oneWord.Index).zfill(4),oneWord.Word), format="mp3")
+            print(">><((^ >")
         except:
             oneWord.HaveE = True
             print("error {}".format(oneWord.Word))
+            print(">><((+ >")
 
     def MakeAudios(self,words):
+        system("mkdir -p words")
         for word in words:
             if word.HaveE == False:
                 self._addSilent(word)
-                print(">><((^ >")
+
 
 
 
     def ConnectAudio(self):
+        system("mkdir -p conbined")
+
         index :int = 0
         files :str = os.listdir("words/")
         files.sort()
@@ -45,6 +50,8 @@ class MakeAudio:
             i+=1
 
     def ConnectAudio2(self):
+        system("mkdir -p conbined")
+
         files = os.listdir("words/")
         files.sort()
         j = 0

@@ -41,6 +41,7 @@ class DownLoad:
             
 
     def Download(self,words:list):
+        system("mkdir -p pre_words")
         for word in words:
             if word.HaveE == False:
                 self._download_mp3(word)
