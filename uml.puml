@@ -1,0 +1,25 @@
+@startuml
+
+    class main
+
+    class MakeAudio
+
+    class ReadExcel{
+        +int GetNumber()
+        +void GetWords(sheetNum:i)
+    }
+
+    class UrlFecher{
+
+    }
+
+    class DownloadAudio
+
+    main->ReadExcel
+    main-d->UrlFecher
+
+
+
+
+
+@enduml

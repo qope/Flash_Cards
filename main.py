@@ -1,21 +1,60 @@
-import csv
-from os import system
-from pydub import AudioSegment
-def download_mp3(num, word):
-    system('curl -o pre_words/{}.mp3 https://ssl.gstatic.com/dictionary/static/sounds/oxford/{}--_gb_1.mp3'.format(word,word))
-    sound1 = AudioSegment.from_file("pre_words/{}.mp3".format(word), "mp3")
-    sound2 = AudioSegment.from_file("Silent3sec.mp3", "mp3")
-    sound = sound1+sound2
-    sound.export("words/{}_{}.mp3".format(num,word), format="mp3")
-def get_list():
-    words = []
-    with open('list.csv', 'r') as f:
-        reader = csv.reader(f)
-        header = next(reader)
-        for row in reader:
-            words.append(row[0])
-    return words
+import ReadExcel
+import UrlFecher
+import DownLoad
+import MakeAudio
 
-words = get_list()
-for i, word in enumerate(words):
-    download_mp3(i, word)
+
+_read :ReadExcel.ReadExcel
+_urlf :UrlFecher.UrlFecher
+_dl :DownLoad.DownLoad
+_audio :MakeAudio.MakeAudio
+
+
+
+class Main:
+
+    _words = []
+
+    def _initWordsList(self,number):
+        for i in range(number):
+            self._words.append(OneWord())
+
+
+    def _initialize(self):
+        _read = ReadExcel.ReadExcel()
+        _urlf = UrlFecher.UrlFecher()
+        _dl = DownLoad.DownLoad()
+        _audio = MakeAudio.MakeAudio()
+
+
+    def __init__(self):
+        self._initialize()
+        number :int = _read.GetNumber()
+        self._initWordsList(number)
+        _read.GetWords(number)
+        _urlf.SetUrl(self._words)
+
+
+
+        _dl.GetMp3(self._words)
+        _audio.MakeAudios(self._words)
+
+
+
+if __name__ == "__main__":
+    _main = Main()
+
+
+class OneWord:
+
+    def __init__(self):
+        self.Url = ""
+        self.Word = ""
+        self.Index = 0
+        self.Audio = None
+        self.AudioTempPath = ""
+        self.AudioExportPath = ""
+        self.HaveE = False
+
+
+
