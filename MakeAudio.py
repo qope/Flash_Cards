@@ -31,15 +31,13 @@ class MakeAudio:
         i = 0
 
         while True:
-            sound1 = AudioSegment.from_file("words/{}".format(files[index]), "mp3")
-            index += 1
-            if index>=len(files)-1:
-                sound1.export("conbined/test{}.mp3".format(i), format="mp3")
-                return
+            sound1 = None
+
             for j in range(3):
                 sound2 = AudioSegment.from_file("words/{}".format(files[index]), "mp3")
-                sound1+=sound2
-                
+                if sound1 == None : sound1 = sound2
+                else :sound1 += sound2
+
                 index+=1
                 if index>=len(files):
                     sound1.export("conbined/test{}.mp3".format(i), format="mp3")
