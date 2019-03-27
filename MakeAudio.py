@@ -4,15 +4,6 @@ import os
 
 class MakeAudio:
 
-    # def _wordAudio(self,oneWord):
-    #     try:
-            
-    #     except:
-    #         oneWord.HaveE = True
-    #         print(oneWord.Word)
-
-
-
     def _addSilent(self,oneWord):
 
         try:
@@ -24,34 +15,33 @@ class MakeAudio:
             oneWord.HaveE = True
             print("error {}".format(oneWord.Word))
 
-    
-
     def MakeAudios(self,words):
         for word in words:
             if word.HaveE == False:
                 # self._wordAudio(word)
                 self._addSilent(word)
                 print(">><((^ >")
-
-
-    def ConnectAudio(self):
-        index :int = 0
-
-        files :str = os.listdir("words/")
+    def ConnectAudio2(self):
+        files = os.listdir("words/")
         files.sort()
-
-        while True:
-
-            sound = AudioSegment.from_file("words/{}".format(files[index]), "mp3")
-            index += 1
-
-            for j in range(34):
-                sound1 = AudioSegment.from_file("words/{}".format(files[index]), "mp3")
-
-                sound+sound1
-
-                index+=1
-                if index>=len(files):break
+        j = 0
+        k = 1
+        N = 30
+        while 1:
+            sound = AudioSegment.from_file("words/{}".format(files[j]), "mp3")
+            i = 0
+            for file in files[j:]:
+                if(i!=0 and i<N):
+                    sound +=AudioSegment.from_file("words/{}".format(file), "mp3")
+                i+=1
+            sound.export("part{}.mp3".format(k), format="mp3")
+            j+=N
+            k+=1
+            if(len(files)<=j):
+                break
+if __name__ == '__main__':
+    m = MakeAudio()
+    m.ConnectAudio2()
 
                 
 
