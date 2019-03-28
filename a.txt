@@ -1,0 +1,358 @@
+On branch connect
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+	modified:   DownLoad.py
+	deleted:    GetMp3.py
+	deleted:    OneWord.py
+	deleted:    ReadFile.py
+	deleted:    TestMain.py
+	deleted:    TestModule.py
+	deleted:    Untitled-1.wsl.txt
+	modified:   __pycache__/DownLoad.cpython-36.pyc
+	modified:   __pycache__/MakeAudio.cpython-36.pyc
+	modified:   __pycache__/ReadExcel.cpython-36.pyc
+	modified:   __pycache__/UrlFetcher.cpython-36.pyc
+	deleted:    excell.py
+	deleted:    list.csv
+	deleted:    pre_words/Mediterranean.mp3
+	deleted:    pre_words/abbreviate.mp3
+	deleted:    pre_words/affluent.mp3
+	deleted:    pre_words/aftermath.mp3
+	deleted:    pre_words/amend.mp3
+	deleted:    pre_words/amphibian.mp3
+	deleted:    pre_words/antibiotic.mp3
+	deleted:    pre_words/apple.mp3
+	deleted:    pre_words/apprehend.mp3
+	deleted:    pre_words/apprentice.mp3
+	deleted:    pre_words/arctic.mp3
+	deleted:    pre_words/artery.mp3
+	deleted:    pre_words/articulate.mp3
+	deleted:    pre_words/ascertain.mp3
+	deleted:    pre_words/assess.mp3
+	deleted:    pre_words/astonishing.mp3
+	deleted:    pre_words/auditory.mp3
+	deleted:    pre_words/bison.mp3
+	deleted:    pre_words/burst.mp3
+	deleted:    pre_words/chore.mp3
+	deleted:    pre_words/coin.mp3
+	deleted:    pre_words/commission.mp3
+	deleted:    pre_words/communal.mp3
+	deleted:    pre_words/compatible.mp3
+	deleted:    pre_words/competence.mp3
+	deleted:    pre_words/compromise.mp3
+	deleted:    pre_words/confidential.mp3
+	deleted:    pre_words/congestion.mp3
+	deleted:    pre_words/congress.mp3
+	deleted:    pre_words/connoisseur.mp3
+	deleted:    pre_words/conquer.mp3
+	deleted:    pre_words/constrain.mp3
+	deleted:    pre_words/corrode.mp3
+	deleted:    pre_words/crawl.mp3
+	deleted:    pre_words/defuse.mp3
+	deleted:    pre_words/deliberate.mp3
+	deleted:    pre_words/demise.mp3
+	deleted:    pre_words/dim.mp3
+	deleted:    pre_words/disclose.mp3
+	deleted:    pre_words/disinfect.mp3
+	deleted:    pre_words/disproportionate.mp3
+	deleted:    pre_words/eclectic.mp3
+	deleted:    pre_words/embed.mp3
+	deleted:    pre_words/empirical.mp3
+	deleted:    pre_words/enforce.mp3
+	deleted:    pre_words/erode.mp3
+	deleted:    pre_words/excerpt.mp3
+	deleted:    pre_words/facilitate.mp3
+	deleted:    pre_words/feat.mp3
+	deleted:    pre_words/fictitious.mp3
+	deleted:    pre_words/fluctuate.mp3
+	deleted:    pre_words/fort.mp3
+	deleted:    pre_words/hull.mp3
+	deleted:    pre_words/impart.mp3
+	deleted:    pre_words/injustice.mp3
+	deleted:    pre_words/interplay.mp3
+	deleted:    pre_words/keystone.mp3
+	deleted:    pre_words/larva.mp3
+	deleted:    pre_words/leisurely.mp3
+	deleted:    pre_words/lethal.mp3
+	deleted:    pre_words/lump.mp3
+	deleted:    pre_words/maze.mp3
+	deleted:    pre_words/mediate.mp3
+	deleted:    pre_words/neutralize.mp3
+	deleted:    pre_words/onset.mp3
+	deleted:    pre_words/pierce.mp3
+	deleted:    pre_words/pigment.mp3
+	deleted:    pre_words/prestigious.mp3
+	deleted:    pre_words/pronunciation.mp3
+	deleted:    pre_words/prose.mp3
+	deleted:    pre_words/ranch.mp3
+	deleted:    pre_words/recession.mp3
+	deleted:    pre_words/recur.mp3
+	deleted:    pre_words/replenish.mp3
+	deleted:    pre_words/reservoir.mp3
+	deleted:    pre_words/respiration.mp3
+	deleted:    pre_words/retract.mp3
+	deleted:    pre_words/rim.mp3
+	deleted:    pre_words/rodent.mp3
+	deleted:    pre_words/seep.mp3
+	deleted:    pre_words/servant.mp3
+	deleted:    pre_words/shatter.mp3
+	deleted:    pre_words/sparse.mp3
+	deleted:    pre_words/specimen.mp3
+	deleted:    pre_words/striking.mp3
+	deleted:    pre_words/subsequent.mp3
+	deleted:    pre_words/surplus.mp3
+	deleted:    pre_words/symptom.mp3
+	deleted:    pre_words/tariff.mp3
+	deleted:    pre_words/terrain.mp3
+	deleted:    pre_words/thrive.mp3
+	deleted:    pre_words/trait.mp3
+	deleted:    pre_words/treaty.mp3
+	deleted:    pre_words/versatile.mp3
+	deleted:    pre_words/vigorous.mp3
+	deleted:    pre_words/vine.mp3
+	deleted:    pre_words/warehouse.mp3
+	deleted:    pre_words/whirl.mp3
+	deleted:    sub.py
+	deleted:    test.mp3
+	deleted:    test.py
+	deleted:    uml.puml
+	deleted:    ~$book.xlsx
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   MakeAudio.py
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   DownLoad.py
+	modified:   __pycache__/DownLoad.cpython-36.pyc
+	modified:   __pycache__/MakeAudio.cpython-36.pyc
+	modified:   __pycache__/ReadExcel.cpython-36.pyc
+	modified:   __pycache__/UrlFetcher.cpython-36.pyc
+	deleted:    conbined/test0.mp3
+	deleted:    conbined/test1.mp3
+	deleted:    conbined/test2.mp3
+	modified:   main.py
+	deleted:    pre_words/conform.mp3
+	deleted:    pre_words/envision.mp3
+	deleted:    pre_words/grandiose.mp3
+	deleted:    pre_words/intimidate.mp3
+	deleted:    pre_words/mimic.mp3
+	deleted:    pre_words/resonance.mp3
+	deleted:    pre_words/slippery.mp3
+	deleted:    words/0000_conform.mp3
+	deleted:    words/0001_slippery.mp3
+	deleted:    words/0002_mimic.mp3
+	deleted:    words/0003_intimidate.mp3
+	deleted:    words/0005_grandiose.mp3
+	deleted:    words/0006_envision.mp3
+	deleted:    words/0007_resonance.mp3
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	a.txt
+	conbined/part1.mp3
+	conbined/part2.mp3
+	conbined/part3.mp3
+	conbined/part4.mp3
+	pre_words/Mediterranean.mp3
+	pre_words/abbreviate.mp3
+	pre_words/affluent.mp3
+	pre_words/aftermath.mp3
+	pre_words/amend.mp3
+	pre_words/amphibian.mp3
+	pre_words/antibiotic.mp3
+	pre_words/apprehend.mp3
+	pre_words/apprentice.mp3
+	pre_words/arctic.mp3
+	pre_words/artery.mp3
+	pre_words/articulate.mp3
+	pre_words/ascertain.mp3
+	pre_words/assess.mp3
+	pre_words/astonishing.mp3
+	pre_words/auditory.mp3
+	pre_words/bison.mp3
+	pre_words/burst.mp3
+	pre_words/chore.mp3
+	pre_words/coin.mp3
+	pre_words/commission.mp3
+	pre_words/communal.mp3
+	pre_words/compatible.mp3
+	pre_words/competence.mp3
+	pre_words/compromise.mp3
+	pre_words/confidential.mp3
+	pre_words/congestion.mp3
+	pre_words/congress.mp3
+	pre_words/connoisseur.mp3
+	pre_words/conquer.mp3
+	pre_words/constrain.mp3
+	pre_words/corrode.mp3
+	pre_words/crawl.mp3
+	pre_words/defuse.mp3
+	pre_words/deliberate.mp3
+	pre_words/demise.mp3
+	pre_words/dim.mp3
+	pre_words/disclose.mp3
+	pre_words/disinfect.mp3
+	pre_words/disproportionate.mp3
+	pre_words/eclectic.mp3
+	pre_words/embed.mp3
+	pre_words/empirical.mp3
+	pre_words/enforce.mp3
+	pre_words/erode.mp3
+	pre_words/excerpt.mp3
+	pre_words/facilitate.mp3
+	pre_words/feat.mp3
+	pre_words/fictitious.mp3
+	pre_words/fluctuate.mp3
+	pre_words/fort.mp3
+	pre_words/hull.mp3
+	pre_words/impart.mp3
+	pre_words/injustice.mp3
+	pre_words/interplay.mp3
+	pre_words/keystone.mp3
+	pre_words/larva.mp3
+	pre_words/leisurely.mp3
+	pre_words/lethal.mp3
+	pre_words/lump.mp3
+	pre_words/maze.mp3
+	pre_words/mediate.mp3
+	pre_words/neutralize.mp3
+	pre_words/onset.mp3
+	pre_words/pierce.mp3
+	pre_words/pigment.mp3
+	pre_words/prestigious.mp3
+	pre_words/prose.mp3
+	pre_words/ranch.mp3
+	pre_words/recession.mp3
+	pre_words/recur.mp3
+	pre_words/replenish.mp3
+	pre_words/reservoir.mp3
+	pre_words/respiration.mp3
+	pre_words/retract.mp3
+	pre_words/rim.mp3
+	pre_words/rodent.mp3
+	pre_words/seep.mp3
+	pre_words/servant.mp3
+	pre_words/shatter.mp3
+	pre_words/sparse.mp3
+	pre_words/specimen.mp3
+	pre_words/striking.mp3
+	pre_words/subsequent.mp3
+	pre_words/surplus.mp3
+	pre_words/symptom.mp3
+	pre_words/tariff.mp3
+	pre_words/terrain.mp3
+	pre_words/thrive.mp3
+	pre_words/trait.mp3
+	pre_words/treaty.mp3
+	pre_words/versatile.mp3
+	pre_words/vigorous.mp3
+	pre_words/vine.mp3
+	pre_words/warehouse.mp3
+	pre_words/whirl.mp3
+	words/0000_compatible.mp3
+	words/0001_symptom.mp3
+	words/0002_pigment.mp3
+	words/0003_keystone.mp3
+	words/0004_crawl.mp3
+	words/0005_vine.mp3
+	words/0006_disinfect.mp3
+	words/0007_ranch.mp3
+	words/0008_leisurely.mp3
+	words/0010_recession.mp3
+	words/0011_coin.mp3
+	words/0012_prestigious.mp3
+	words/0013_versatile.mp3
+	words/0014_apprehend.mp3
+	words/0015_treaty.mp3
+	words/0016_articulate.mp3
+	words/0017_rodent.mp3
+	words/0018_disproportionate.mp3
+	words/0019_maze.mp3
+	words/0020_interplay.mp3
+	words/0021_mediate.mp3
+	words/0022_striking.mp3
+	words/0023_trait.mp3
+	words/0024_erode.mp3
+	words/0025_larva.mp3
+	words/0026_terrain.mp3
+	words/0027_seep.mp3
+	words/0028_impart.mp3
+	words/0029_burst.mp3
+	words/0030_astonishing.mp3
+	words/0031_affluent.mp3
+	words/0033_fort.mp3
+	words/0034_reservoir.mp3
+	words/0035_compromise.mp3
+	words/0036_sparse.mp3
+	words/0037_congestion.mp3
+	words/0038_tariff.mp3
+	words/0039_amend.mp3
+	words/0040_respiration.mp3
+	words/0041_servant.mp3
+	words/0042_constrain.mp3
+	words/0043_conquer.mp3
+	words/0044_onset.mp3
+	words/0045_hull.mp3
+	words/0046_confidential.mp3
+	words/0047_dim.mp3
+	words/0048_disclose.mp3
+	words/0049_congress.mp3
+	words/0050_pierce.mp3
+	words/0051_warehouse.mp3
+	words/0052_auditory.mp3
+	words/0053_recur.mp3
+	words/0054_corrode.mp3
+	words/0055_shatter.mp3
+	words/0056_empirical.mp3
+	words/0057_eclectic.mp3
+	words/0058_lethal.mp3
+	words/0059_specimen.mp3
+	words/0060_competence.mp3
+	words/0061_defuse.mp3
+	words/0062_apprentice.mp3
+	words/0063_excerpt.mp3
+	words/0064_embed.mp3
+	words/0065_artery.mp3
+	words/0066_subsequent.mp3
+	words/0067_neutralize.mp3
+	words/0068_surplus.mp3
+	words/0070_fluctuate.mp3
+	words/0071_abbreviate.mp3
+	words/0072_facilitate.mp3
+	words/0073_connoisseur.mp3
+	words/0074_assess.mp3
+	words/0075_communal.mp3
+	words/0076_thrive.mp3
+	words/0077_demise.mp3
+	words/0078_chore.mp3
+	words/0079_ascertain.mp3
+	words/0080_enforce.mp3
+	words/0081_antibiotic.mp3
+	words/0082_whirl.mp3
+	words/0083_arctic.mp3
+	words/0084_rim.mp3
+	words/0085_prose.mp3
+	words/0086_feat.mp3
+	words/0087_lump.mp3
+	words/0088_injustice.mp3
+	words/0089_aftermath.mp3
+	words/0090_bison.mp3
+	words/0091_Mediterranean.mp3
+	words/0092_replenish.mp3
+	words/0093_fictitious.mp3
+	words/0094_vigorous.mp3
+	words/0096_retract.mp3
+	words/0097_deliberate.mp3
+	words/0098_amphibian.mp3
+	words/0099_commission.mp3
+
