@@ -11,7 +11,7 @@ class MakeAudio:
             sound1 = AudioSegment.from_file(oneWord.AudioTempPath, "mp3")
             sound2 = AudioSegment.from_file("Silent3sec.mp3", "mp3")
             sound = sound1+sound2
-            sound.export("words/{}_{}.mp3".format(str( oneWord.Index).zfill(4),oneWord.Word), format="mp3",bitrate="128k")
+            sound.export("words/{}_{}.mp3".format(str( oneWord.Index).zfill(4),oneWord.WordJp), format="mp3",bitrate="128k")
             print(">><((^ >")
         except:
             oneWord.HaveE = True
@@ -78,8 +78,7 @@ class MakeAudio:
         for file in files:
             path = "words/{}".format(file)
             tags = EasyID3(path)
-            tags['album'] = 'words'
-            tags['album'] = 'words'
+            tags['album'] = 'words2-4'
             tags.save()
 
 
