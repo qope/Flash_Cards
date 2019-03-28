@@ -4,14 +4,6 @@ import DownLoad
 import MakeAudio
 
 
-# _read :ReadExcel.ReadExcel
-# _urlf :UrlFetcher.UrlFetcher
-# _dl :DownLoad.DownLoad
-# _audio :MakeAudio.MakeAudio
-
-
-
-
 class OneWord:
 
     def __init__(self):
@@ -55,7 +47,7 @@ class Main:
         self._dl.Download(self._words)
         self._audio.MakeAudios(self._words)
         self._audio.ConnectAudio()
-
+        self._audio.WriteAlbum()
 
 
 if __name__ == "__main__":
