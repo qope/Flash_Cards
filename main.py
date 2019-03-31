@@ -23,7 +23,7 @@ class Main:
             self._words.append(OneWord())
 
     def __init__(self):
-        self._read = ReadExcel.ReadExcel(3)
+        self._read = ReadExcel.ReadExcel(0)
         self._urlf = UrlFetcher.UrlFetcher()
         self._dl = DownLoad.DownLoad()
         self._audio = MakeAudio.MakeAudio()
