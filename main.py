@@ -35,7 +35,7 @@ class Main:
 
         self._dl.Download(self._words)
         self._audio.MakeAudios(self._words)
-        self._audio.ConnectAudio()
+        self._audio.ConnectAudio2()
         self._audio.WriteAlbum()
 
 if __name__ == "__main__":
