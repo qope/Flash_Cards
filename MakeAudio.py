@@ -24,9 +24,6 @@ class MakeAudio:
             if word.HaveE == False:
                 self._addSilent(word)
 
-
-
-
     def ConnectAudio(self):
         system("mkdir -p conbined")
 
@@ -57,7 +54,7 @@ class MakeAudio:
         files.sort()
         j = 0
         k = 1
-        N = 30
+        N = 36
         while 1:
             sound = AudioSegment.from_file("words/{}".format(files[j]), "mp3")
             i = 0
@@ -71,7 +68,6 @@ class MakeAudio:
             if(len(files)<=j):
                 break
 
-
     def WriteAlbum(self):
         files = os.listdir("words/")
         files.sort()
@@ -82,23 +78,6 @@ class MakeAudio:
             tags['album'] = 'words'
             tags.save()
 
-
-
-
 if __name__ == '__main__':
     m = MakeAudio()
     m.ConnectAudio2()
-
-
-                
-
-
-
-
-
-
-
-
-
-          
-    
